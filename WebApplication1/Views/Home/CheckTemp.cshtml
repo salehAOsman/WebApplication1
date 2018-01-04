@@ -1,0 +1,19 @@
+﻿@model WebApplication1.Models.CheckingTmp
+
+@{
+    ViewBag.Title = "CheckTemp";
+}
+
+<h2>CheckTemp</h2>
+                        <!--Action name, Controller name-->
+@using (Html.BeginForm("CheckTemp", "Home", FormMethod.Post))
+{
+    <h4>Input your temperature  :<input type="number" name="tmpIn" value="0" /></h4>
+
+    <input type="submit" value="Submit" class="alert-success" />
+   
+    <h5>The result is :</h5>
+
+    <h3>@WebApplication1.Models.CheckingTmp.Describe</h3>
+    <h3>@WebApplication1.Models.CheckingTmp.Recomend</h3>
+}
