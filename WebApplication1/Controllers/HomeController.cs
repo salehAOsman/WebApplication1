@@ -20,7 +20,7 @@ namespace WebApplication1.Controllers
         }
 
         [HttpPost]
-        public ActionResult CheckTemp(float tmpIn=0)
+        public ActionResult CheckTemp(float tmpIn = 0)
         {
             return View();
         }

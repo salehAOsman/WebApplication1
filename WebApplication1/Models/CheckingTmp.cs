@@ -13,9 +13,9 @@ namespace WebApplication1.Models
         static public string Recomend { get; set; }
        // static public string InputNum { get; set; }
 
-        public CheckingTmp(float temp)
+        public CheckingTmp(float tmpIn = 0)
         {
-            Temp = temp;
+            Temp = tmpIn;
             CalcTempeture();
         }
 
